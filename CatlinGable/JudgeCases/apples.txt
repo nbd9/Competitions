@@ -1,0 +1,20 @@
+4
+1
+meIRL 0
+2
+Zero 0
+Ten 10
+3
+Bread 87
+Panem 21
+Pomme 35
+9
+Honeycrisp 98
+Fuji 4
+Gala 4
+Red 4
+Green 4
+Golden 4
+Candy 4
+Caramel 4
+Apple 4
