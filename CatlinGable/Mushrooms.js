@@ -20,7 +20,7 @@
 
 const fs = require('fs');
 
-fs.readFile('./JudgeCases/mushrooms.txt', 'utf8', function (err, data) {
+fs.readFile('/Users/nbdeg/Documents/Coding/Competition/CatlinGable/JudgeCases/mushrooms.txt', 'utf8', function (err, data) {
     input = data.split('\n')
     numCases = input.shift()
 
@@ -51,7 +51,10 @@ fs.readFile('./JudgeCases/mushrooms.txt', 'utf8', function (err, data) {
         // Find minApples
         minApples = Infinity
         // Loop through all possibilities
-        for (n = 0; n < (2 ** numBushes); n++) {
+        // for (n = 0; n < (2 ** numBushes); n++) {
+            
+        for (n = (2 ** numBushes) - 1; n > ((2 ** numBushes - 5) > 1) ? (2 ** numBushes - 5) : 1; n--) {
+            // console.log(n)
             collectedBushes = n.toString(2)
             collectedBushes = "0".repeat(numBushes - collectedBushes.length) + collectedBushes
             // console.log(`n = ${n}, binary = ${collectedBushes}`)
